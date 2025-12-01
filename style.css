@@ -1,0 +1,75 @@
+/* Main Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+}
+.main-heading {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 30px;
+    &:not(:first-child) {
+        border-top: 1px solid #000;
+        padding-top: 8px;
+    }
+}
+
+/* Challenge 1 */
+
+.challenge-1 {
+    display: flex;
+    justify-content: center;
+    .card {
+        width: 300px;
+        background: #ddd;
+        padding: 16px;
+        border-radius: 8px;
+        text-align: center;
+        h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+/* Challenge 2 */
+.challenge-2 {
+    display: flex;
+    justify-content: center;
+    .card {
+        width: 300px;
+        background: #ddd;
+        padding: 16px;
+        border-radius: 8px;
+        text-align: center;
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        span {
+            font-size: 13px;
+            color: #585858;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+    }
+}
