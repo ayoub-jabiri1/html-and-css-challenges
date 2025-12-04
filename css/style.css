@@ -233,3 +233,249 @@ body {
         display: none !important;
     }
 }
+
+/* Challenge 5 */
+
+.challenge-5 {
+    background-color: #c8e6c9;
+    height: 100vh;
+    .container {
+        background-color: #66bb6a;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+        padding: 16px;
+        border-radius: 8px;
+        .img-box {
+            background-color: #f9f9f9;
+            width: 250px;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            overflow: hidden;
+            &:hover {
+                box-shadow: 0 0 10px #000;
+            }
+            img {
+                width: 100%;
+                transition: 0.3s;
+                border-radius: 8px;
+            }
+            &:hover img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+/* Challenge 6 */
+
+.challenge-6 {
+    height: 100vh;
+    .container {
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ddd;
+        padding: 16px;
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 250px;
+            label {
+                font-size: 13px;
+                margin-bottom: 5px;
+                display: block;
+            }
+            div {
+                width: 200px;
+            }
+            input[type="text"],
+            input[type="password"] {
+                padding: 5px 10px;
+                width: 100%;
+                border: 1px solid #000;
+                outline: none;
+            }
+            a {
+                display: block;
+                color: #333;
+                font-size: 13px;
+                text-align: right;
+                margin-top: 8px;
+            }
+            input[type="submit"] {
+                background-color: #4caf50;
+                color: #fff;
+                border-radius: 4px;
+                margin-left: auto;
+                margin-right: auto;
+                width: fit-content;
+                padding: 6px 15px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* Challenge 7 */
+.challenge-7 {
+    height: 100vh;
+    .loader {
+        width: 100px;
+        height: 100px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #2196f3 #2196f3 #2196f3 transparent;
+        border-radius: 50%;
+        animation: loading 1s linear infinite;
+    }
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Challenge 8 */
+.challenge-8 {
+    background-image: url("../imgs/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 0 50px;
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        nav {
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                li {
+                    a {
+                    }
+                }
+            }
+        }
+    }
+    .landing {
+        height: calc(100vh - 70px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        h1 {
+            font-size: 50px;
+            color: #fff;
+        }
+        p {
+            width: 80%;
+            color: #fff;
+        }
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 15px 0;
+            width: 150px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
+
+/* Challenge 9 */
+.challenge-9 {
+    background-color: #ddd;
+    height: 100vh;
+    .card {
+        width: 250px;
+        height: 160px;
+        background-color: #2196f3;
+        border-radius: 8px;
+        transition: 0.6s;
+        overflow: hidden;
+        box-shadow: 0 0 5px #777;
+        &:hover {
+            transform: rotateY(180deg);
+            img {
+                display: none;
+            }
+            .info {
+                display: block;
+                transform: rotateY(180deg);
+            }
+        }
+        img {
+            width: 100%;
+        }
+        .info {
+            display: none;
+            padding: 10px;
+            text-align: center;
+            p {
+                color: #fff;
+                margin-bottom: 15px;
+            }
+            button {
+                background-color: #4caf50;
+                color: #fff;
+                border-radius: 8px;
+                border: none;
+                padding: 8px 12px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* Challenge 10 */
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+}
+.theme-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+.theme-btn:hover ~ .challenge-10 {
+    --background-color: #000;
+    --text-color: #fff;
+}
+.challenge-10 {
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+    .container {
+        h1 {
+            margin-top: 15px;
+            color: var(--text-color);
+        }
+    }
+}
